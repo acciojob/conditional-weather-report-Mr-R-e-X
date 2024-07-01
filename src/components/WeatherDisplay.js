@@ -6,9 +6,9 @@ const WeatherDisplay = ({ temperature, conditions }) => {
       <p>
         Temprature:
         {temperature > 20 ? (
-          <span style={{ color: "red" }}>{temperature}</span>
+          <span style={{ color: "red" }}>{" " + temperature}</span>
         ) : (
-          <span style={{ color: "blue" }}>{temperature}</span>
+          <span style={{ color: "blue" }}>{" " + temperature}</span>
         )}
       </p>
       <p>Conditions: {conditions}</p>
