@@ -3,12 +3,15 @@ import "../styles/App.css";
 const WeatherDisplay = ({ temperature, conditions }) => {
   return (
     <>
-      {temperature > 20 ? (
-        <p style={{ color: "red" }}>{temperature}</p>
-      ) : (
-        <p style={{ color: "blue" }}>{temperature}</p>
-      )}
-      <p>{conditions}</p>
+      <p>
+        Temprature:
+        {temperature > 20 ? (
+          <span style={{ color: "red" }}>{temperature}</span>
+        ) : (
+          <span style={{ color: "blue" }}>{temperature}</span>
+        )}
+      </p>
+      <p>Conditions: {conditions}</p>
     </>
   );
 };
